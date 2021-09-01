@@ -197,7 +197,7 @@ h4:hover .heading-permalink, h5:hover .heading-permalink, h6:hover .heading-perm
     color: #3fadde !important;
 }
 
-.table-dark > tbody > tr > td > code {
+.table-dark > tbody > tr > td > code, .table-dark > tbody > tr > td *:not(pre) > code {
     color: #ff007f !important;
 }
 
