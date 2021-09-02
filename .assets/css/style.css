@@ -58,7 +58,7 @@ a {
     background-color: yellow;
 }
 
-p > code, li > code {
+:not(pre) code {
     color: #3829cb !important;
 }
 
