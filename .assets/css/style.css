@@ -80,7 +80,7 @@ a {
 }
 
 /* muted text */
-.tms {
+.tms, small {
     color: #6c757d !important;
     font-size: .875em;
 }
