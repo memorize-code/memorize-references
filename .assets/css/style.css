@@ -58,7 +58,7 @@ a {
     background-color: yellow;
 }
 
-:not(pre) code {
+:not(pre) code:not([class*=language-]) {
     color: #3829cb !important;
 }
 
