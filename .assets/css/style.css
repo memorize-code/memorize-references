@@ -62,12 +62,12 @@ a {
     color: #3829cb !important;
 }
 
-.details, .details-border, .det-e {
+.details, .details-border, .details-e {
     padding: 1rem !important;
     margin-bottom: 1rem!important;
 }
 
-.details-border, .det-e {
+.details-border, .details-e {
     border: 1px solid #212529!important;
 }
 
