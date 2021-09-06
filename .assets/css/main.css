@@ -1,0 +1,243 @@
+/**
+Backgrounds and colors
+**/
+.bg-my-dark, .sl, .sr, .sep-both {
+  background: var(--special-dark);
+}
+
+.bg-my-darkI {
+  background: var(--special-dark) !important;
+}
+
+.bg-my-grey, .main-div, .course-main-div {
+  background: var(--special-grey);
+}
+
+.bg-my-greyI {
+  background: var(--special-grey) !important;
+}
+
+.bg-my-yellow, .memorize-button {
+  background: var(--special-yellow);
+}
+
+.bg-my-yellowI {
+  background: var(--special-yellow) !important;
+}
+
+.text-my-dark, .main-div, .course-main-div, .memorize-button, .sl, .sr, .sep-both, blockquote {
+  color: var(--special-dark);
+}
+
+.text-my-darkI, .memorize-link, blockquote a {
+  color: var(--special-dark) !important;
+}
+
+.text-my-red {
+  color: var(--special-red);
+}
+
+.text-my-redI {
+  color: var(--special-red) !important;
+}
+
+.text-my-yellow {
+  color: var(--special-yellow);
+}
+
+.text-my-yellowI {
+  color: var(--special-yellow) !important;
+}
+
+.text-my-orange {
+  color: var(--special-orange);
+}
+
+.text-my-orangeI {
+  color: var(--special-orange) !important;
+}
+
+.text-my-blue {
+  color: var(--special-blue);
+}
+
+.text-my-blueI {
+  color: var(--special-blue) !important;
+}
+
+.text-my-green {
+  color: var(--special-green);
+}
+
+.text-my-greenI {
+  color: var(--special-green) !important;
+}
+
+/**
+HTML TAGS
+**/
+html {
+  /* smooth "back to top */
+  scroll-behavior: smooth;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+a {
+  color: var(--link-color) !important;
+}
+
+.mark, mark {
+  background-color: var(--mark-color);
+}
+
+.tms, small {
+  color: var(--comment-color) !important;
+  font-size: 0.875em;
+}
+
+:not(pre) code:not([class*=language-]) {
+  color: var(--code-color) !important;
+}
+
+.details, .details-border, .details-e {
+  padding: 1rem !important;
+  margin-bottom: 1rem !important;
+}
+
+.details-border, .details-e {
+  border: 1px solid #212529 !important;
+}
+
+.details-e > summary {
+  font-weight: bold;
+}
+.details-e > :nth-child(2) {
+  padding-top: 1rem;
+}
+
+/**
+The navbar
+**/
+.nav-link {
+  font-size: 22px;
+  color: var(--nav-bar-element-color) !important;
+}
+
+.nav-link.active, .lgs-link.active {
+  font-weight: bold;
+}
+
+.fw400 {
+  font-weight: 400;
+}
+
+.main-div {
+  border-radius: 0.25rem;
+  font-weight: 400;
+  font-size: 1.25rem;
+  padding: 3rem !important;
+}
+
+.course-main-div {
+  border-radius: 0.3rem;
+}
+
+.memorize-button {
+  text-decoration: none;
+  padding: 0.3rem 0.5rem;
+  border: 1px solid var(--button-border);
+  border-radius: 5px;
+}
+.memorize-button:hover {
+  opacity: 0.8;
+}
+
+.memorize-link {
+  font-size: 17px;
+  padding: 0 5px;
+  text-decoration: none !important;
+}
+.memorize-link .active {
+  font-weight: bold !important;
+}
+
+.heading-permalink {
+  font-size: 0.8em;
+  vertical-align: super;
+  text-decoration: none;
+}
+
+.sl {
+  padding: 15px 0;
+  opacity: 1;
+  margin-left: -60px;
+  margin-bottom: 15px;
+  margin-top: 25px;
+}
+
+.sr {
+  padding: 15px 0;
+  opacity: 1;
+  margin-right: -60px;
+  margin-bottom: 15px;
+  margin-top: 25px;
+}
+
+.sep-both {
+  padding: 15px 0;
+  opacity: 1;
+  margin-left: -3rem;
+  margin-right: -3rem;
+}
+
+blockquote {
+  background: transparent;
+  margin: 1em 0;
+  border-left: 5px solid var(--border-blockquote);
+}
+blockquote p {
+  margin-top: 10px;
+  padding: 5px 10px;
+}
+
+.spoiler {
+  padding: 5px !important;
+}
+.spoiler, .spoiler > *:not(p, b) {
+  transition: color 0.5s, opacity 0.5s, background 0.5s;
+}
+.spoiler:not(:hover) {
+  background: var(--spoiler) !important;
+  color: transparent !important;
+}
+.spoiler:not(:hover) > * {
+  opacity: 0;
+}
+
+.editor-preview, .CodeMirror {
+  background: var(--editor-background) !important;
+}
+
+.editor-preview pre {
+  background-image: initial;
+  background-color: var(--editor-pre-background) !important;
+}
+
+.editor-preview pre > code > .hljs-params, .editor-preview pre > code {
+  text-shadow: none !important;
+  color: var(--editor-pre-symbol);
+}
+
+.table-of-contents ul {
+  list-style: none;
+}
+.table-of-contents li {
+  text-align: left;
+  text-decoration: none;
+}
+.table-of-contents li a {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=main.css.map */

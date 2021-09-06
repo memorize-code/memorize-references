@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+:root {
+  // tags
+  --link-color: #6893e0;
+  --mark-color: #b8b800;
+  --code-color: #df5f51;
+  --comment-color: #8e877b;
+  --button-border: #736b5f;
+
+  // navbar
+  --nav-bar-element-color: #bcb9b3;
+
+  // blockquote
+  --border-blockquote: #736b5f;
+  --spoiler: #05628b;
+
+  // editor
+  --editor-background: rgba(36, 29, 23, 0.6);
+  --editor-pre-background: #1b2429;
+  --editor-pre-symbol: #d1cfcc;
+
+  // colors
+  --special-red: #d75a30;
+  --special-yellow: #e6ba37;
+  --special-orange: #d1ac3f;
+  --special-green: #4ce685;
+  --special-blue: #3fadde;
+  --special-dark: #bcb9b3;
+  --special-grey: #292d2f;
+}
+
+.table {
+  color: rgb(188, 185, 179);
+  border-color: rgb(50, 55, 57);
+}
+
+:not(pre)>code[class*=language-], pre[class*=language-] {
+  background: #1b2429 !important;
+  text-shadow: none !important;
+
+  & *:not(.token) {
+    color: var(--special-dark) !important;
+    text-shadow: none !important;
+  }
+
+  & .token {
+    text-shadow: none !important;
+
+    .tag { color: rgb(230, 87, 167); }
+    .punctuation { color: rgb(151, 144, 134); }
+    .attr-name { color: rgb(182, 230, 87); }
+    .attr-value { color: rgb(77, 184, 230) }
+  }
+}
+
+.border-dark {
+  border: 1px solid rgb(115, 107, 95) !important;
+}
+.table-striped > tbody > tr:nth-of-type(2n+1) {
+  color: var(--special-dark);
+}
+
+.sep-both, .sl, .sr {
+  background: var(--special-dark);
+}
+
+.memorize-button {
+  color: var(--special-grey) !important;
+}
+
+.text-dark {
+  color: rgb(188, 185, 179) !important;
+}
+
+.editor-toolbar button {
+  color: #d1cfcc;
+
+  &.active {
+    background-color: rgb(23, 25, 26) !important;
+  }
+}
+
+.CodeMirror {
+  color: rgb(209, 207, 204) !important;
+}

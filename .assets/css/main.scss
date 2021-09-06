@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+@use "modules/colors";
+@use "modules/tags";
+@use "modules/nav";
+
+.fw400 {
+  font-weight: 400;
+}
+
+// Special components
+.main-div {
+  @extend .text-my-dark;
+  @extend .bg-my-grey;
+  border-radius: 0.25rem;
+  font-weight: 400;
+  font-size: 1.25rem;
+  padding: 3rem !important;
+}
+
+.course-main-div {
+  @extend .text-my-dark;
+  @extend .bg-my-grey;
+  border-radius: 0.3rem;
+}
+
+.memorize-button {
+  @extend .text-my-dark;
+  @extend .bg-my-yellow;
+  text-decoration: none;
+  padding: 0.3rem 0.5rem;
+  border: 1px solid var(--button-border);
+  border-radius: 5px;
+
+  &:hover { opacity: 0.8; }
+}
+.memorize-link {
+  @extend .text-my-darkI;
+  font-size: 17px;
+  padding: 0 5px;
+  text-decoration: none !important;
+
+  & .active {
+    font-weight: bold !important;
+  }
+}
+
+.heading-permalink {
+  font-size: .8em;
+  vertical-align: super;
+  text-decoration: none;
+}
+
+@mixin separator($mode){
+  @extend .text-my-dark;
+  @extend .bg-my-dark;
+  padding: 15px 0;
+  opacity: 1;
+  @if $mode == "left" { margin-left: -60px; }
+  @else if $mode == "right" { margin-right: -60px; }
+  @if $mode == "both" {
+    margin-left: -3rem;
+    margin-right: -3rem;
+  } @else {
+    margin-bottom: 15px;
+    margin-top: 25px;
+  }
+}
+
+.sl { @include separator("left"); }
+.sr { @include separator("right"); }
+.sep-both { @include separator("both"); }
+
+// spoiler
+blockquote {
+  background: transparent; margin: 1em 0; border-left: 5px solid var(--border-blockquote);
+  @extend .text-my-dark;
+
+  a { @extend .text-my-darkI; }
+  p { margin-top: 10px; padding: 5px 10px; }
+  // code { color: #d63384 !important; }
+}
+
+.spoiler {
+  padding: 5px !important;
+  &, & > *:not(p, b) { transition: color 0.5s, opacity 0.5s, background 0.5s; }
+  &:not(:hover) { background: var(--spoiler) !important; color: transparent !important; }
+  &:not(:hover) > * { opacity: 0 }
+}
+
+// editor
+.editor-preview, .CodeMirror {
+  background: var(--editor-background) !important;
+}
+
+.editor-preview pre {
+  background-image: initial;
+  background-color: var(--editor-pre-background) !important;
+}
+
+.editor-preview pre > code > .hljs-params, .editor-preview pre > code {
+  text-shadow: none !important;
+  color: var(--editor-pre-symbol);
+}
+
+// table of contents
+.table-of-contents {
+  ul { list-style: none; }
+  li {
+    text-align: left; text-decoration: none;
+    a { text-decoration: none; }
+  }
+}
