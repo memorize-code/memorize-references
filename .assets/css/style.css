@@ -6,10 +6,13 @@
 
 :root {
     --special-red: #dd4441;
+    --special-red-dark: #a61707;
+    --special-purple: #6c0099;
     --special-yellow: #FFCC33;
     --special-orange: rgb(230, 186, 55);
     --special-green: #00ac41;
     --special-blue: #0888c2;
+    --special-blue-dark: #090797;
     --special-dark: #1e262c;
     --special-white: #F4F8F9;
     --special-grey: #d8d8d8;
@@ -51,7 +54,7 @@ html {
 }
 
 a {
-    color: var(--special-blue) !important;
+    color: var(--special-blue-dark) !important;
 }
 
 .mark, mark {
@@ -59,7 +62,7 @@ a {
 }
 
 :not(pre) code:not([class*=language-]) {
-    color: #3829cb !important;
+    color: var(--special-red-dark) !important;
 }
 
 .details, .details-border, .details-e {
