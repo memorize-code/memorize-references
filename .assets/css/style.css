@@ -5,10 +5,10 @@
 *********************/
 
 :root {
-    --special-red: #dd4441;
+    --special-red: #d41;
     --special-red-dark: #a61707;
     --special-purple: #6c0099;
-    --special-yellow: #FFCC33;
+    --special-yellow: #fc3;
     --special-orange: rgb(230, 186, 55);
     --special-green: #00ac41;
     --special-blue: #0888c2;
@@ -126,7 +126,7 @@ a {
 }
 
 .nav-link.active, .lgs-link.active {
-    color: var(--special-red) !important;
+    font-weight: bold;
 }
 
 /*********************
