@@ -84,3 +84,12 @@
 .CodeMirror {
   color: rgb(209, 207, 204) !important;
 }
+
+.sep-both, .sl, .sr {
+  color: var(--special-grey);
+  background: #161b20 !important;
+}
+
+.search-bar {
+  background: rgb(209, 207, 204) !important;
+}

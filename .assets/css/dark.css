@@ -79,4 +79,13 @@
   color: #d1cfcc !important;
 }
 
+.sep-both, .sl, .sr {
+  color: var(--special-grey);
+  background: #161b20 !important;
+}
+
+.search-bar {
+  background: #d1cfcc !important;
+}
+
 /*# sourceMappingURL=dark.css.map */
