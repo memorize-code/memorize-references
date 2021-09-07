@@ -35,17 +35,26 @@
 :not(pre) > code[class*=language-] .token, pre[class*=language-] .token {
   text-shadow: none !important;
 }
-:not(pre) > code[class*=language-] .token .tag, pre[class*=language-] .token .tag {
+:not(pre) > code[class*=language-] .token.tag, :not(pre) > code[class*=language-] .token.number, pre[class*=language-] .token.tag, pre[class*=language-] .token.number {
   color: #e657a7;
 }
-:not(pre) > code[class*=language-] .token .punctuation, pre[class*=language-] .token .punctuation {
+:not(pre) > code[class*=language-] .token.punctuation, :not(pre) > code[class*=language-] .token.operator, pre[class*=language-] .token.punctuation, pre[class*=language-] .token.operator {
   color: #979086;
 }
-:not(pre) > code[class*=language-] .token .attr-name, pre[class*=language-] .token .attr-name {
+:not(pre) > code[class*=language-] .token.operator, :not(pre) > code[class*=language-] .token.named-entity, :not(pre) > code[class*=language-] .token.entity, pre[class*=language-] .token.operator, pre[class*=language-] .token.named-entity, pre[class*=language-] .token.entity {
+  background: inherit !important;
+}
+:not(pre) > code[class*=language-] .token.attr-name, :not(pre) > code[class*=language-] .token.string, pre[class*=language-] .token.attr-name, pre[class*=language-] .token.string {
   color: #b6e657;
 }
-:not(pre) > code[class*=language-] .token .attr-value, pre[class*=language-] .token .attr-value {
+:not(pre) > code[class*=language-] .token.attr-value, :not(pre) > code[class*=language-] .token.keyword, pre[class*=language-] .token.attr-value, pre[class*=language-] .token.keyword {
   color: #4db8e6;
+}
+:not(pre) > code[class*=language-] .token.class-name, :not(pre) > code[class*=language-] .token.function, :not(pre) > code[class*=language-] .token.constant, pre[class*=language-] .token.class-name, pre[class*=language-] .token.function, pre[class*=language-] .token.constant {
+  color: #c94d66;
+}
+:not(pre) > code[class*=language-] .token.comment, pre[class*=language-] .token.comment {
+  color: #898174;
 }
 
 .border-dark {
@@ -86,6 +95,10 @@
 
 .search-bar {
   background: #d1cfcc !important;
+}
+
+input[name=commit-name], textarea[name=commit-desc] {
+  color: #bcb9b3 !important;
 }
 
 /*# sourceMappingURL=dark.css.map */

@@ -47,10 +47,13 @@
   & .token {
     text-shadow: none !important;
 
-    .tag { color: rgb(230, 87, 167); }
-    .punctuation { color: rgb(151, 144, 134); }
-    .attr-name { color: rgb(182, 230, 87); }
-    .attr-value { color: rgb(77, 184, 230) }
+    &.tag, &.number { color: rgb(230, 87, 167); }
+    &.punctuation, &.operator { color: rgb(151, 144, 134); }
+    &.operator, &.named-entity, &.entity { background: inherit !important; }
+    &.attr-name, &.string { color: rgb(182, 230, 87); }
+    &.attr-value, &.keyword { color: rgb(77, 184, 230) }
+    &.class-name, &.function, &.constant { color: rgb(201, 77, 102); }
+    &.comment { color: rgb(137, 129, 116); }
   }
 }
 
@@ -92,4 +95,8 @@
 
 .search-bar {
   background: rgb(209, 207, 204) !important;
+}
+
+input[name="commit-name"], textarea[name="commit-desc"] {
+  color: #bcb9b3 !important;
 }
