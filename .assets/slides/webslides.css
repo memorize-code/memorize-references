@@ -84,3 +84,7 @@ Slides Index
 
 .text-slide-number {
   color: #abc; }
+
+#webslides-zoomed, #navigation {
+    display: none !important;
+}
