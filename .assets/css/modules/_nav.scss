@@ -9,3 +9,17 @@ The navbar
 .nav-link.active, .lgs-link.active {
   font-weight: bold;
 }
+
+.tab-link.active {
+  font-weight: normal;
+  background: transparent !important;
+  border-color: #0e78e2 #0e78e2 #0e78e2 !important;
+}
+
+.tab-link:not(.active) {
+  border: 0 !important;
+}
+
+.nav-tabs {
+  border-bottom: 1px solid #0e78e2;
+}
