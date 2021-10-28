@@ -34,7 +34,11 @@ a { color: var(--link-color) !important; }
 .details, .details-border, .details-e { padding: 1rem !important; margin-bottom: 1rem!important; }
 // got a border
 .details-border, .details-e { border: 1px solid #212529!important; }
-.details-e { // title bold, space with summary
+.details-e { // title bold, space after summary
   & > summary { font-weight: bold; }
+  & > :nth-child(2) { padding-top: 1rem; }
+}
+.details-s { // small padding, space after summary
+  padding: 0.5rem !important;
   & > :nth-child(2) { padding-top: 1rem; }
 }
