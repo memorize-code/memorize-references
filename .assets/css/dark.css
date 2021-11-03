@@ -101,4 +101,12 @@ input[name=commit-name], textarea[name=commit-desc] {
   color: #bcb9b3 !important;
 }
 
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+  color: inherit !important;
+}
+
+.language-css .token.string, .style .token.string, .token.entity, .token.operator, .token.url {
+  background: inherit !important;
+}
+
 /*# sourceMappingURL=dark.css.map */
